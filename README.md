@@ -102,11 +102,12 @@ No hints on exact field names. Part of the task is discovering the schema.
 
 ### 2. Write a loop
 
-**Goal:** Use the **Query Playground** to write a small script.
+**Goal:** Write a small script in both the **Interactive Shell** and the **Query Playground** and compare the experience.
 
 - Write a loop that **prints your name 10 times**, with a short `sleep()` between each print.
-- Watch what happens in the output tab as it runs.
-- The playground is multi-line. Experiment with how `Enter` behaves as you type. How do you actually run the script vs. just add a new line?
+- Run it in the **Interactive Shell** first, then try the same script in the **Query Playground**.
+- The Interactive Shell is multi-line. Experiment with how `Enter` behaves as you type.
+- Do the two experiences feel different? Does output appear the same way in both?
 
 ---
 
