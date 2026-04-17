@@ -61,10 +61,14 @@ A new `.documentdb` file type that lets you write and run JavaScript scripts aga
 
 We no longer depend on the `mongosh` executable being installed on your machine. The runtime is bundled directly into the extension, which means it works with Azure DocumentDB clusters that use Entra ID for authentication. (Yes, this is big. We're really proud of it.)
 
+This also means that **installing the extension is all you need**. No cross-platform headaches, no version mismatches, no PATH configuration, no separate install steps. Everything comes preconfigured and ready to go the moment the extension is installed.
+
 ### 💻 Interactive Shell
 A full REPL terminal embedded in VS Code, giving you the `mongosh` experience integrated with the extension's connection management. Open it from any database or collection in the tree view. Supports `show dbs`, `use <db>`, `help`, `it` (cursor iteration), `exit`/`quit`, and **Ctrl+C** to cancel long-running operations.
 
 Same as the Query Playground, no external `mongosh` executable required. The runtime is bundled, so it works with Azure DocumentDB clusters that use Entra ID for authentication. (Yes, this is big. We're really proud of it.)
+
+Again, just install the extension and you're done. No extra tools, no configuration, no surprises regardless of your OS or environment.
 
 ---
 
@@ -84,11 +88,22 @@ If you find time and want to hack around the collection-view autocompletion too,
 
 ### 0. Find the Query Playground and the Interactive Shell, then find `help`
 
+<p align="left"><img src="images/tasks/task-0.png" style="width:80%; min-width:240px; max-width:480px; height:auto;" /></p>
+
 **Goal:** Get oriented. Both features are new and you'll need to discover where they live in the UI. Once you find them, look for the `help` command inside each one and see what it tells you.
+
+1. Connect to the provided cluster using the extension.
+2. Locate the databases and collections in the tree view.
+3. Find the **Interactive Shell** and open it.
+4. Find the **Query Playground** and open it.
+5. Run `help` in the Interactive Shell. What does it show?
+6. Run `help` in the Query Playground. What does it show? Is it the same?
 
 ---
 
 ### 1. Query the `restaurants` collection
+
+<p align="left"><img src="images/tasks/task-1.png" style="width:80%; min-width:240px; max-width:480px; height:auto;" /></p>
 
 **Goal:** Use the **Interactive Shell** (or **Query Playground**) to find the right data.
 
@@ -102,6 +117,8 @@ No hints on exact field names. Part of the task is discovering the schema.
 
 ### 2. Write a loop
 
+<p align="left"><img src="images/tasks/task-2.png" style="width:80%; min-width:240px; max-width:480px; height:auto;" /></p>
+
 **Goal:** Write a small script in both the **Interactive Shell** and the **Query Playground** and compare the experience.
 
 - Write a loop that **prints your name 10 times**, with a short `sleep()` between each print.
@@ -113,6 +130,8 @@ No hints on exact field names. Part of the task is discovering the schema.
 
 ### 3. A long sleep
 
+<p align="left"><img src="images/tasks/task-3.png" style="width:80%; min-width:240px; max-width:480px; height:auto;" /></p>
+
 **Goal:** Test cancellation and timeout behavior.
 
 - In the **Interactive Shell**, call `sleep(45000)` (45 seconds).
@@ -123,6 +142,8 @@ No hints on exact field names. Part of the task is discovering the schema.
 
 ### 4. Switch databases mid-session
 
+<p align="left"><img src="images/tasks/task-4.png" style="width:80%; min-width:240px; max-width:480px; height:auto;" /></p>
+
 **Goal:** Test shell state persistence.
 
 - In the Interactive Shell, connect, run a query against one database, then `use` a different database.
@@ -131,6 +152,8 @@ No hints on exact field names. Part of the task is discovering the schema.
 ---
 
 ### 5. Open multiple shells and playgrounds
+
+<p align="left"><img src="images/tasks/task-5.png" style="width:80%; min-width:240px; max-width:480px; height:auto;" /></p>
 
 **Goal:** Stress the session management.
 
@@ -141,6 +164,8 @@ No hints on exact field names. Part of the task is discovering the schema.
 ---
 
 ### 6. Freestyle - go wild 🔥
+
+<p align="left"><img src="images/tasks/task-6.png" style="width:80%; min-width:240px; max-width:480px; height:auto;" /></p>
 
 **Goal:** Do the weird thing. This is the actual bug bash.
 
