@@ -10,7 +10,7 @@
 
 ### 1. DocumentDB for VS Code - download here:
 
-- Download Link: [vscode-documentdb-0.8.0-bugbash.vsix](vsix/vscode-documentdb-0.8.0-bugbash.vsix)
+- Download Link: [vscode-documentdb-0.8.0-bugbash-2.vsix](vsix/vscode-documentdb-0.8.0-bugbash-2.vsix)
 
 <p align="center"><img src="images/download-info.png" style="width:80%; min-width:240px; max-width:420px; height:auto;" /></p>
 
